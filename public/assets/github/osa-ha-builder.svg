@@ -1,0 +1,50 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coarse-grained polymer repeat-unit builder">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#1a2440"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beadb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="beadt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <ellipse cx="320" cy="180" rx="300" ry="150" fill="url(#glow2)"/>
+
+  <!-- repeat-unit bracket -->
+  <g stroke="#94a3b8" stroke-width="6" fill="none" opacity="0.8" stroke-linecap="round">
+    <path d="M175 95 h-20 v170 h20"/>
+    <path d="M465 95 h20 v170 h-20"/>
+  </g>
+  <text x="492" y="270" font-family="'Space Grotesk',sans-serif" font-size="34" font-weight="700" fill="#94a3b8">n</text>
+
+  <!-- one repeat unit: chain of beads -->
+  <g stroke="#2dd4bf" stroke-width="7" stroke-linecap="round" opacity="0.7">
+    <line x1="215" y1="180" x2="285" y2="150"/>
+    <line x1="285" y1="150" x2="355" y2="180"/>
+    <line x1="355" y1="180" x2="425" y2="150"/>
+  </g>
+  <line x1="285" y1="150" x2="285" y2="95" stroke="#22c55e" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="285" cy="90" r="16" fill="#4ade80"/>
+  <circle cx="215" cy="180" r="25" fill="url(#beadt)"/>
+  <circle cx="285" cy="150" r="25" fill="url(#beadb)"/>
+  <circle cx="355" cy="180" r="25" fill="url(#beadt)"/>
+  <circle cx="425" cy="150" r="25" fill="url(#beadb)"/>
+
+  <!-- faded neighbours to imply repetition -->
+  <g opacity="0.3">
+    <circle cx="130" cy="205" r="22" fill="url(#beadt)"/>
+    <circle cx="510" cy="205" r="22" fill="url(#beadt)"/>
+  </g>
+
+  <text x="40" y="315" font-family="'Space Grotesk',sans-serif" font-size="26" font-weight="700" fill="#5eead4" opacity="0.9">CG POLYMER BUILDER</text>
+</svg>

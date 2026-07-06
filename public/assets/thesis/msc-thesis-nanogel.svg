@@ -1,0 +1,41 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="pH-responsive nanogel with encapsulated cargo">
+  <defs>
+    <linearGradient id="tbg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#1a2440"/>
+    </linearGradient>
+    <radialGradient id="npfill" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0d9488" stop-opacity="0.08"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#tbg1)"/>
+
+  <!-- nanogel sphere -->
+  <circle cx="300" cy="185" r="130" fill="url(#npfill)" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.5"/>
+  <!-- crosslinked polymer mesh inside -->
+  <g stroke="#38bdf8" stroke-width="2.2" opacity="0.55" fill="none">
+    <path d="M210 150 Q260 120 320 150 T430 170"/>
+    <path d="M195 200 Q260 180 320 210 T420 210"/>
+    <path d="M215 245 Q270 230 330 255 T410 250"/>
+    <path d="M240 130 Q255 200 235 265"/>
+    <path d="M300 120 Q320 190 305 260"/>
+    <path d="M360 130 Q375 195 360 255"/>
+  </g>
+  <!-- crosslink nodes -->
+  <g fill="#5eead4">
+    <circle cx="240" cy="150" r="6"/><circle cx="320" cy="150" r="6"/><circle cx="300" cy="210" r="6"/>
+    <circle cx="360" cy="170" r="6"/><circle cx="235" cy="230" r="6"/><circle cx="360" cy="240" r="6"/>
+  </g>
+  <!-- encapsulated cargo (peptide / drug) -->
+  <g fill="#4ade80">
+    <circle cx="285" cy="185" r="10"/><circle cx="330" cy="205" r="8"/><circle cx="270" cy="220" r="7"/><circle cx="345" cy="160" r="7"/>
+  </g>
+
+  <!-- pH gradient markers -->
+  <text x="470" y="120" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" fill="#f87171">pH 1.5</text>
+  <text x="470" y="250" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" fill="#7dd3fc">pH 6.8</text>
+  <path d="M500 135 V235" stroke="#334155" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <text x="40" y="325" font-family="'Space Grotesk',sans-serif" font-size="24" font-weight="700" fill="#5eead4" opacity="0.9">OSA-HA NANOGEL · ORAL DELIVERY</text>
+</svg>

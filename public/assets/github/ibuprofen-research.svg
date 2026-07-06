@@ -1,0 +1,43 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Crystal versus amorphous molecular dynamics">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#1a2440"/>
+    </linearGradient>
+    <linearGradient id="molc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="mola" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg3)"/>
+  <line x1="320" y1="50" x2="320" y2="300" stroke="#223052" stroke-width="2" stroke-dasharray="6 8"/>
+
+  <!-- left: crystal (ordered lattice) -->
+  <g>
+    <g stroke="#14b8a6" stroke-width="2" opacity="0.35">
+      <path d="M70 90 h200 M70 150 h200 M70 210 h200 M70 270 h200"/>
+      <path d="M90 70 v220 M150 70 v220 M210 70 v220 M270 70 v220"/>
+    </g>
+    <g fill="url(#molc)">
+      <circle cx="90"  cy="90"  r="11"/><circle cx="150" cy="90"  r="11"/><circle cx="210" cy="90"  r="11"/><circle cx="270" cy="90"  r="11"/>
+      <circle cx="90"  cy="150" r="11"/><circle cx="150" cy="150" r="11"/><circle cx="210" cy="150" r="11"/><circle cx="270" cy="150" r="11"/>
+      <circle cx="90"  cy="210" r="11"/><circle cx="150" cy="210" r="11"/><circle cx="210" cy="210" r="11"/><circle cx="270" cy="210" r="11"/>
+      <circle cx="90"  cy="270" r="11"/><circle cx="150" cy="270" r="11"/><circle cx="210" cy="270" r="11"/><circle cx="270" cy="270" r="11"/>
+    </g>
+  </g>
+
+  <!-- right: amorphous (disordered) -->
+  <g fill="url(#mola)">
+    <circle cx="380" cy="95"  r="11"/><circle cx="440" cy="80"  r="11"/><circle cx="505" cy="110" r="11"/><circle cx="560" cy="85" r="11"/>
+    <circle cx="410" cy="150" r="11"/><circle cx="470" cy="135" r="11"/><circle cx="540" cy="165" r="11"/><circle cx="590" cy="140" r="11"/>
+    <circle cx="375" cy="205" r="11"/><circle cx="435" cy="230" r="11"/><circle cx="500" cy="200" r="11"/><circle cx="560" cy="235" r="11"/>
+    <circle cx="405" cy="275" r="11"/><circle cx="475" cy="285" r="11"/><circle cx="535" cy="270" r="11"/><circle cx="595" cy="290" r="11"/>
+  </g>
+
+  <text x="70"  y="325" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" fill="#5eead4">CRYSTAL</text>
+  <text x="440" y="325" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" fill="#7dd3fc">AMORPHOUS</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Magnetic nanoparticles binding DNA">
+  <defs>
+    <linearGradient id="tbg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#1a2440"/>
+    </linearGradient>
+    <radialGradient id="np" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#94a3b8"/>
+      <stop offset="0.5" stop-color="#475569"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </radialGradient>
+    <linearGradient id="dna1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="dna2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#tbg5)"/>
+
+  <!-- magnetic field lines -->
+  <g stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.3">
+    <path d="M180 180 C 120 100, 260 100, 200 180 C 260 260, 120 260, 180 180"/>
+    <path d="M180 180 C 90 80, 300 80, 220 180 C 300 280, 90 280, 180 180"/>
+  </g>
+
+  <!-- magnetic nanoparticles cluster -->
+  <g>
+    <circle cx="170" cy="175" r="46" fill="url(#np)" stroke="#64748b" stroke-width="2"/>
+    <circle cx="235" cy="230" r="30" fill="url(#np)" stroke="#64748b" stroke-width="2"/>
+    <circle cx="120" cy="235" r="26" fill="url(#np)" stroke="#64748b" stroke-width="2"/>
+    <circle cx="230" cy="120" r="24" fill="url(#np)" stroke="#64748b" stroke-width="2"/>
+  </g>
+  <!-- N/S poles on the main NP -->
+  <text x="150" y="168" font-family="'Space Grotesk',sans-serif" font-size="20" font-weight="700" fill="#f87171">N</text>
+  <text x="178" y="200" font-family="'Space Grotesk',sans-serif" font-size="20" font-weight="700" fill="#7dd3fc">S</text>
+
+  <!-- bound DNA double helix on the right -->
+  <g stroke-linecap="round">
+    <path d="M430 60 C 500 100, 500 150, 430 190 C 360 230, 360 280, 430 320" fill="none" stroke="url(#dna1)" stroke-width="8"/>
+    <path d="M430 60 C 360 100, 360 150, 430 190 C 500 230, 500 280, 430 320" fill="none" stroke="url(#dna2)" stroke-width="8"/>
+    <g stroke="#94a3b8" stroke-width="3" opacity="0.7">
+      <line x1="405" y1="95" x2="455" y2="95"/>
+      <line x1="395" y1="140" x2="465" y2="140"/>
+      <line x1="405" y1="190" x2="455" y2="190"/>
+      <line x1="395" y1="240" x2="465" y2="240"/>
+      <line x1="405" y1="285" x2="455" y2="285"/>
+    </g>
+  </g>
+
+  <text x="40" y="345" font-family="'Space Grotesk',sans-serif" font-size="23" font-weight="700" fill="#7dd3fc" opacity="0.9">MAGNETIC NP · PLASMID EXTRACTION</text>
+</svg>

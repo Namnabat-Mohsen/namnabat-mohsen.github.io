@@ -1,0 +1,60 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Martini 3 coarse-grained bead polymer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#1a2440"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bead" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="graft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86efac"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <ellipse cx="320" cy="180" rx="300" ry="150" fill="url(#glow)"/>
+
+  <!-- bonds -->
+  <g stroke="#2dd4bf" stroke-width="7" stroke-linecap="round" opacity="0.7">
+    <line x1="80" y1="200" x2="160" y2="165"/>
+    <line x1="160" y1="165" x2="240" y2="200"/>
+    <line x1="240" y1="200" x2="320" y2="165"/>
+    <line x1="320" y1="165" x2="400" y2="200"/>
+    <line x1="400" y1="200" x2="480" y2="165"/>
+    <line x1="480" y1="165" x2="560" y2="200"/>
+  </g>
+  <!-- graft bonds -->
+  <g stroke="#22c55e" stroke-width="6" stroke-linecap="round" opacity="0.75">
+    <line x1="160" y1="165" x2="150" y2="95"/>
+    <line x1="320" y1="165" x2="330" y2="90"/>
+    <line x1="480" y1="165" x2="470" y2="95"/>
+  </g>
+  <!-- graft beads (OSA) -->
+  <g>
+    <circle cx="150" cy="90" r="18" fill="url(#graft)"/>
+    <circle cx="330" cy="85" r="18" fill="url(#graft)"/>
+    <circle cx="470" cy="90" r="18" fill="url(#graft)"/>
+  </g>
+  <!-- backbone beads (HA) -->
+  <g>
+    <circle cx="80"  cy="200" r="26" fill="url(#bead)"/>
+    <circle cx="160" cy="165" r="26" fill="url(#bead)"/>
+    <circle cx="240" cy="200" r="26" fill="url(#bead)"/>
+    <circle cx="320" cy="165" r="26" fill="url(#bead)"/>
+    <circle cx="400" cy="200" r="26" fill="url(#bead)"/>
+    <circle cx="480" cy="165" r="26" fill="url(#bead)"/>
+    <circle cx="560" cy="200" r="26" fill="url(#bead)"/>
+  </g>
+  <!-- highlights -->
+  <g fill="#ffffff" opacity="0.35">
+    <circle cx="72" cy="192" r="7"/><circle cx="152" cy="157" r="7"/><circle cx="232" cy="192" r="7"/>
+    <circle cx="312" cy="157" r="7"/><circle cx="392" cy="192" r="7"/><circle cx="472" cy="157" r="7"/><circle cx="552" cy="192" r="7"/>
+  </g>
+  <text x="40" y="315" font-family="'Space Grotesk',sans-serif" font-size="26" font-weight="700" fill="#7dd3fc" opacity="0.9">MARTINI 3 · HA / OSA-HA</text>
+</svg>
