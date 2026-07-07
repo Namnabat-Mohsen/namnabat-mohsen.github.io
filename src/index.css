@@ -88,6 +88,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   scroll-margin-top: var(--nav-h);
 }
 .section--alt { background: var(--bg-2); }
+/* Automatic alternating backgrounds: every other content section gets bg-2.
+   Hero is a <section> too but lacks .section, so counting still lines up. */
+main > section.section:nth-of-type(odd) { background: var(--bg-2); }
 .container { max-width: var(--max-width); margin: 0 auto; }
 
 .section-head { margin-bottom: 48px; }
@@ -466,6 +469,44 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 780px) { .skills__grid { grid-template-columns: 1fr; } }
 
 /* =========================================================================
+   TECHNIQUES & INSTRUMENTS (wet lab / dry lab)
+   ========================================================================= */
+.tech__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.tech-group {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px;
+}
+.tech-group__head { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.tech-group__icon {
+  width: 46px; height: 46px; flex: none; border-radius: 12px;
+  display: grid; place-items: center; font-size: 1.4rem;
+  background: var(--accent-soft); border: 1px solid var(--border-glow);
+}
+.tech-group__head h3 { font-family: var(--font-display); font-size: 1.15rem; }
+.tech-group__head p { color: var(--text-muted); font-size: 0.84rem; }
+.tech-group__count {
+  margin-left: auto; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem;
+  color: var(--accent);
+}
+.tech-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.tech-chip {
+  font-size: 0.85rem; padding: 8px 14px; border-radius: 999px;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text);
+  transition: border-color 0.2s, transform 0.2s, color 0.2s;
+}
+.tech-chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+/* wet lab → green accent, dry lab → sky accent */
+.tech-group--wet .tech-group__icon { background: rgba(74, 222, 128, 0.12); border-color: rgba(74, 222, 128, 0.4); }
+.tech-group--wet .tech-group__count { color: var(--accent-3); }
+.tech-group--wet .tech-chip:hover { border-color: var(--accent-3); color: var(--accent-3); }
+.tech-group--dry .tech-group__icon { background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.4); }
+.tech-group--dry .tech-group__count { color: var(--accent-2); }
+.tech-group--dry .tech-chip:hover { border-color: var(--accent-2); color: var(--accent-2); }
+
+@media (max-width: 780px) { .tech__grid { grid-template-columns: 1fr; } }
+
+/* =========================================================================
    SOFTWARE GRID
    ========================================================================= */
 .soft__grid {
@@ -482,11 +523,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .soft:hover { transform: translateY(-4px); border-color: var(--accent); background: var(--surface-2); }
 .soft__logo {
-  width: 48px; height: 48px; border-radius: 10px;
-  background: var(--surface-2); display: grid; place-items: center;
+  width: 52px; height: 52px; border-radius: 12px;
+  background: #ffffff; display: grid; place-items: center;
   overflow: hidden; font-size: 1.4rem; font-weight: 700; color: var(--accent);
 }
-.soft__logo img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+.soft__logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
 .soft__name { font-size: 0.85rem; font-weight: 500; }
 .soft__tip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(4px);

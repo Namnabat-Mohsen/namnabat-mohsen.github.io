@@ -4,7 +4,7 @@ import Reveal from './Reveal'
 
 export default function Education() {
   return (
-    <section id="education" className="section section--alt">
+    <section id="education" className="section">
       <div className="container">
         <SectionHead eyebrow="Education" title="Academic background" />
 

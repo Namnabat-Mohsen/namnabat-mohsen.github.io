@@ -23,7 +23,7 @@ export default function Publications() {
   const open = active !== null ? publications[active] : null
 
   return (
-    <section id="publications" className="section section--alt">
+    <section id="publications" className="section">
       <div className="container">
         <SectionHead
           eyebrow="Publications"

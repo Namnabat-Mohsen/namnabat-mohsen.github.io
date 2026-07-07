@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Education from './components/Education'
 import Skills from './components/Skills'
+import Techniques from './components/Techniques'
 import Software from './components/Software'
 import Publications from './components/Publications'
 import Projects from './components/Projects'
@@ -21,6 +22,7 @@ export default function App() {
         <Education />
         <Thesis />
         <Skills />
+        <Techniques />
         <Software />
         <Publications />
         <Projects />

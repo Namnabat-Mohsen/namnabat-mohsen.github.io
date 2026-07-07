@@ -23,7 +23,7 @@ export default function Simulations() {
   const sim = active !== null ? simulations[active] : null
 
   return (
-    <section id="simulations" className="section section--alt">
+    <section id="simulations" className="section">
       <div className="container">
         <SectionHead
           eyebrow="MD Simulation Gallery"
