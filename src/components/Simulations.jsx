@@ -28,7 +28,7 @@ export default function Simulations() {
         <SectionHead
           eyebrow="MD Simulation Gallery"
           title="Molecular dynamics in motion"
-          sub="Click a trajectory to play it fullscreen. Drop .mp4/.webm files into public/assets/simulations/."
+          sub="Click any trajectory to play it full-screen."
         />
 
         <div className="sim__grid">

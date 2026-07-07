@@ -19,7 +19,7 @@ export default function Software() {
         <SectionHead
           eyebrow="Software & Tools"
           title="Tools of the trade"
-          sub="Hover any tool to see what I use it for. Add logos in public/assets/software/."
+          sub="Hover any tool to see what I use it for."
         />
         <div className="soft__grid">
           {software.map((t, i) => (

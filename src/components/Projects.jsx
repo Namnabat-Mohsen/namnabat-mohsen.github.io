@@ -10,7 +10,7 @@ export default function Projects() {
         <SectionHead
           eyebrow="GitHub Projects"
           title="Code & open source"
-          sub="Curated repositories. Add a screenshot or GIF per repo in public/assets/github/."
+          sub="Selected open-source repositories and tools."
         />
 
         <div className="proj__grid">

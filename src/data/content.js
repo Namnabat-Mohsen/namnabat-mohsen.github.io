@@ -126,7 +126,7 @@ export const software = [
   { name: 'COOT', note: 'X-ray refinement', logo: '/assets/software/coot.png' },
   { name: 'Python', note: 'Scripting & analysis', logo: '/assets/software/python.png' },
   { name: 'R', note: 'Statistics & data science', logo: '/assets/software/r.png' },
-  { name: 'MATLAB', note: 'Numerical analysis', logo: '' },
+  { name: 'MATLAB', note: 'Numerical analysis', logo: '/assets/software/matlab.png' },
   { name: 'GraphPad Prism', note: 'Statistics & plotting', logo: '/assets/software/graphpad-prism.png' },
   { name: 'ImageJ', note: 'Image analysis', logo: '/assets/software/imagej.png' },
   { name: 'Linux', note: 'HPC workflows', logo: '/assets/software/linux.png' },
@@ -194,7 +194,7 @@ export const publications = [
       'Tabrizi F, Khatami M, Heidari MM, Bragança J, Tatari H, Namnabat M, Hadadzadeh M, Navabi Shirazi MA',
     blurb:
       'Identified HAND1 variants that may disrupt miRNA target sites and protein function in pediatric congenital heart disease.',
-    image: '', // journal cover or figure, e.g. '/assets/publications/pub1.jpg'
+    image: '/assets/publications/hand1-string-network.png',
     links: [
       {
         label: 'Google Scholar',
